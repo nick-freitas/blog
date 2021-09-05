@@ -20,7 +20,7 @@ But enough about the non-technicals, how is Nubia getting built?
 
 ### Code Structure
 
-The Nubia project is a [Nrwl Nx](https://nx.dev/) workspace with different applications/libraries in the same monorepo. The actual code in this workspace is split up into libraries (usually modules but not always), leading to *very* small applications that serve only to call a shell library, which itself is a composition of other libraries. I came across this structure from [Trung Vo](https://gist.github.com/trungk18) who describes it more in depth in his [Nx workspace structure for NestJs and Angular](https://gist.github.com/trungk18/7ef8766cafc05bc8fd87be22de6c5b12) gist, but I'll summarize the main benefits I'm interested in here.
+The Nubia project is a [Nrwl Nx](https://nx.dev/) workspace with different applications/libraries in the same monorepo. The actual code in this workspace is split up into libraries (usually modules but not always), leading to _very_ small applications that serve only to call a shell library, which itself is a composition of other libraries. I came across this structure from [Trung Vo](https://gist.github.com/trungk18) who describes it more in depth in his [Nx workspace structure for NestJs and Angular](https://gist.github.com/trungk18/7ef8766cafc05bc8fd87be22de6c5b12) gist, but I'll summarize the main benefits I'm interested in here.
 
 Nx makes use of libraries, and other app/library dependencies on those, to generate a dependency graph showing what is used by different parts of your application.
 
@@ -45,7 +45,7 @@ It's been a month since the last stream. This is for a few different reasons (in
 
 #### A single Nest.js API
 
-The Nubia Api right now is a single API built with [Nest.js](https://nestjs.com/) with two modules, one for the reader and one for the editor. This is giving me two different endpoints (`/reader-api/` and `/editor-api`) which is not ideal. The goal is to have everything working off of a singular `/api/`. I have the api working for the reader application with this setup however, and the easiest way to get the editor application integrated with the project as a whole, is by having a seperate api endpoint for it also. Once I have a basic store application working, api endpoint refactoring will come back into play. 
+The Nubia Api right now is a single API built with [Nest.js](https://nestjs.com/) with two modules, one for the reader and one for the editor. This is giving me two different endpoints (`/reader-api/` and `/editor-api`) which is not ideal. The goal is to have everything working off of a singular `/api/`. I have the api working for the reader application with this setup however, and the easiest way to get the editor application integrated with the project as a whole, is by having a seperate api endpoint for it also. Once I have a basic store application working, api endpoint refactoring will come back into play.
 
 Like the Reader application briefly described above, the API follows the same splitting pattern, having a very small application, with different libraries. This is the API's Dependency Graph.
 ![API Dependency Graph](../images/2021-09-05-nubia-overview/api-dep-graph.png)
