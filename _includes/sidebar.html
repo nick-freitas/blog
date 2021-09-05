@@ -9,12 +9,6 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a
-        class="sidebar-nav-item{% unless page.title %} active{% endunless %}"
-        href="{{ site.baseurl }}/"
-        >Blog</a
-      >
-
       {% comment %} The code below dynamically generates a sidebar nav of pages
       with `layout: page` in the front-matter. See readme for usage. {%
       endcomment %} {% assign pages_list = site.pages %} {% for node in
