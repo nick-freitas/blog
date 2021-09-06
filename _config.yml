@@ -31,7 +31,7 @@ footer-links:
   rss: coding_time_with_nick # just type anything here for a working RSS icon
   twitter: coding_nick
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCQ8hD_FPnQGaQaysm6jaHNA # channel/<your_long_string> or user/<user-name>
+  youtube: #channel/UCQ8hD_FPnQGaQaysm6jaHNA # channel/<your_long_string> or user/<user-name>
   twitch: codingtimewithnick # channel that cames after twitch.tv/
   googleplus: # anything in your profile username that comes after plus.google.com/
 
