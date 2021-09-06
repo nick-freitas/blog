@@ -6,7 +6,7 @@
 name: Coding Time with Nick
 
 # Short bio or description (displayed in the header)
-description: Dev blog for personal projects
+description: A dev blog for my personal projects
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/13678383?s=400&u=27d243166566805eb3eb4981e3923f720caf696d&v=4
@@ -14,7 +14,6 @@ avatar: https://avatars.githubusercontent.com/u/13678383?s=400&u=27d243166566805
 #
 # Flags below are optional
 #
-
 author:
   name: "Nick Freitas"
   url: nfreitas.com
@@ -45,7 +44,7 @@ google_analytics: G-YP6DSGWVT2
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: www.codingtimewithnick.com
+url: nick-freitas.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
